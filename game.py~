@@ -11,10 +11,10 @@ def limits(cells):
 		x=cell.xcor()
 		y=cell.ycor()
 		
-		if (cell.xcor() > width): 
-			cell.set_dx(-cell.get_dx())
+		if (cell.xcor()> width): 
+			cell.set_dx(-cell.set_dx())
 		if (cell.ycor() > height):
-			cell.set_dy(-cell.get_dy())
+			cell.set_dy(-cell.set_dy())
 
 while(True):
 	move_cells(cells)
