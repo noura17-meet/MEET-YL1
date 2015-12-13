@@ -50,6 +50,7 @@ class Cell(Turtle):
 	# this function calculates the speed factor of the cell that depends on the cell's size
 	def get_speed(self):
 		return 150 / (self.radius)
+
 ## here ends the class Cell
 ## and starts the defintion of normal functions
 
@@ -147,6 +148,10 @@ def get_user_direction(cell):
 	return (xdir, ydir)
 
 # returns a random x on the screen
+def get_x(self):
+	return self.xcor()+self.get_radius()
+def get_y(self):
+	return self.ycor()+self.get_radius()
 def get_random_x():
 	return random.randint(-get_screen_width(), get_screen_width())
 
